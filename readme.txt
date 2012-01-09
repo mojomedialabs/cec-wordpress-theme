@@ -1,5 +1,5 @@
-= TWENTY ELEVEN =
+= CEC =
 
-* by the WordPress team, http://wordpress.org/
+* by the Mojo Media Labs team, http://mojomedialabs.com/
 
-== ABOUT TWENTY ELEVEN ==
+== ABOUT CEC ==
