@@ -602,3 +602,13 @@ function cec_hide_admin_bar(){
 }
 
 remove_filter('the_content', 'wpautop');
+
+function my_scripts_method() {
+	wp_enqueue_script('jquery', false, array() , false, false);
+	wp_enqueue_script('jquery-ui-core', false, array() , false, false);
+	wp_enqueue_script('jquery-ui-tabs', false, array() , false, false);
+	wp_register_script('cec', get_template_directory_uri() . '/js/cec.js', array('jquery'), false, false);
+	wp_enqueue_script('cec');
+}
+
+add_action('wp_enqueue_scripts', 'my_scripts_method');

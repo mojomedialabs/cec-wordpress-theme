@@ -14,7 +14,7 @@
 function getRandomHeader(){
   $options = array("b3ff00", "ff00b3", "ccc", "");
   shuffle($options);
-  return "<img src='http://placehold.it/990x155/$options[0]' style='position: absolute; top: 5px; left: 5px;'>";
+  return "<img src='http://placehold.it/990x155/$options[0]' class='page-header-image'>";
 }
 get_header(); echo getRandomHeader(); ?>
 		<div id="primary">

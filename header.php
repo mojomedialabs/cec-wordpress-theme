@@ -108,13 +108,13 @@
 				else :
 			?>
 				<?php get_search_form(); ?>
-      <?php endif; 
+      <?php endif;
        /* */
       ?>
-      
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
         <?php /**/ ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/headers/logo.png" height="75px">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/headers/logo.png">
         <?php /**/ ?>
       </a>
 			<nav id="access" role="navigation">

@@ -14,7 +14,8 @@
   </div><!-- #main -->
 <?php /**/ ?>
 	<footer id="colophon" role="contentinfo">
-
+		<p id="copyright">&copy;<?php echo date("Y"); ?> CEC Electrical Inc.</p>
+		<p id="mojo">Designed by <a href="http://mojomedialabs.com/">Mojo Media Labs</a>.
 			<?php
 				/* A sidebar in the footer? Yep. You can can customize
 				 * your footer with three columns of widgets.
@@ -23,14 +24,14 @@
 			?>
     <nav id="social-media">
       <ul>
-        <li>
-          <a href="">
-            <img src="http://placehold.it/33x33">
+        <li id="linked-in">
+          <a href="http://www.linkedin.com/company/cec-electrical-inc.">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" alt="LinkedIn" title="LinkedIn" />
           </a>
         </li>
-        <li>
-          <a href="">
-            <img src="http://placehold.it/33x33">
+        <li id="facebook">
+          <a href="http://www.facebook.com/pages/CEC-ELECTRICAL-INC/119162192838">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="Facebook" title="Facebook" />
           </a>
         </li>
       </ul>
