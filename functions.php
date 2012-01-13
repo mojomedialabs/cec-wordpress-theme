@@ -607,8 +607,10 @@ function my_scripts_method() {
 	wp_enqueue_script('jquery', false, array() , false, false);
 	wp_enqueue_script('jquery-ui-core', false, array() , false, false);
 	wp_enqueue_script('jquery-ui-tabs', false, array() , false, false);
+	wp_register_script('jquery-jcarousel', get_template_directory_uri() . '/js/jquery.jcarousel.min.js', array('jquery'), false, false);
+	wp_enqueue_script('jquery-jcarousel', false, array(), false, false);
 	wp_register_script('cec', get_template_directory_uri() . '/js/cec.js', array('jquery'), false, false);
-	wp_enqueue_script('cec');
+	wp_enqueue_script('cec', false, array(), false, false);
 }
 
 add_action('wp_enqueue_scripts', 'my_scripts_method');

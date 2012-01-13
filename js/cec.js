@@ -7,26 +7,22 @@ jQuery(function($){
 		$(this).stop().animate({ bottom: "-124px" });
 	});
 
-	var scrollPane, scrollContent, scrollMax;
-	scrollPane = $('#tabs-slider');
-	scrollContent = $('#tabs > span > ul');
+	$(".portfolio-projects").tabs();
 
-	$('#tabs').tabs().children('div').each(function() {
-		$('.imgs li img', this).click(function(e) {
-  			$(this).parent().parent().parent().children('img').attr('src', this.src);
-		}).first().click();
+	$.easing["easeInBack"] = function(x, t, b, c, d, s) {
+		if (s === undefined) {
+			s = 1.70158;
+		}
+
+		return c * (t /= d) * t * ((s + 1) * t - s) + b;
+	};
+
+	$(".portfolio-projects-menu").jcarousel({
+		animation: 500,
+		easing: "easeInBack",
+		scroll: 5,
+		wrap: "circular"
 	});
 
-	setTimeout(function() {
-		var Max = scrollContent.height() - scrollContent.parent().height();
-		if ( Max > 20 ) {
-			scrollPane.slider({
-				max: Max,
-				step: scrollContent.parent().height(),
-				slide: function( event, ui ) {
-					scrollContent.css( "top", '-' + ui.value + 'px' );
-				}
-			}).addClass('javascript');
-		}
-	}, 15);
+	$(".project-pictures").tabs();
 });
