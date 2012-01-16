@@ -629,39 +629,39 @@ article.page.no-sidebar-menu .entry-content {
 	padding: 10px;
 }
 
-.portfolio-projects-menu .jcarousel-container {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-container {
 	width: 725px;
 }
 
-.portfolio-projects-menu .jcarousel-container-horizontal {
-	width: 725px;
+.jcarousel-skin-portfolio-projects-menu .jcarousel-container-horizontal {
+	width: 705px;
 }
 
-.portfolio-projects-menu .jcarousel-clip {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-clip {
 	overflow: hidden;
 }
 
-.portfolio-projects-menu .jcarousel-clip-horizontal {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-clip-horizontal {
 	height: 70px;
 	margin: 0 auto;
 	width: 620px;
 }
 
-.portfolio-projects-menu .jcarousel-item {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-item {
 	height: 60px;
 	width: 60px;
 }
 
-.portfolio-projects-menu .jcarousel-item-horizontal {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-item-horizontal {
 	margin: 0 10px 0 0;
 }
 
-.portfolio-projects-menu .jcarousel-item-placeholder {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-item-placeholder {
 	background: #ffffff;
 	color: #ffffff;
 }
 
-.portfolio-projects-menu .jcarousel-next-horizontal {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-horizontal {
 	background: transparent url(images/portfolio-projects-menu-next.png) no-repeat 0 0;
 	cursor: pointer;
 	height: 22px;
@@ -671,24 +671,24 @@ article.page.no-sidebar-menu .entry-content {
 	width: 12px;
 }
 
-.portfolio-projects-menu .jcarousel-next-horizontal:hover,
-.portfolio-projects-menu .jcarousel-next-horizontal:focus {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-horizontal:hover,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-horizontal:focus {
 	background-position: -12px 0;
 }
 
-.portfolio-projects-menu .jcarousel-next-horizontal:active {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-horizontal:active {
 	background-position: -24px 0;
 }
 
-.portfolio-projects-menu .jcarousel-next-disabled-horizontal,
-.portfolio-projects-menu .jcarousel-next-disabled-horizontal:hover,
-.portfolio-projects-menu .jcarousel-next-disabled-horizontal:focus,
-.portfolio-projects-menu .jcarousel-next-disabled-horizontal:active {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-next-disabled-horizontal:focus,
+.pjcarousel-skin-ortfolio-projects-menu .jcarousel-next-disabled-horizontal:active {
 	background-position: -36px 0;
 	cursor: default;
 }
 
-.portfolio-projects-menu .jcarousel-prev-horizontal {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-horizontal {
 	background: transparent url(images/portfolio-projects-menu-previous.png) no-repeat 0 0;
 	cursor: pointer;
 	height: 22px;
@@ -698,24 +698,25 @@ article.page.no-sidebar-menu .entry-content {
 	width: 12px;
 }
 
-.portfolio-projects-menu .jcarousel-prev-horizontal:hover,
-.portfolio-projects-menu .jcarousel-prev-horizontal:focus {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-horizontal:focus {
 	background-position: -12px 0;
 }
 
-.portfolio-projects-menu .jcarousel-prev-horizontal:active {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-horizontal:active {
 	background-position: -24px 0;
 }
 
-.portfolio-projects-menu .jcarousel-prev-disabled-horizontal,
-.portfolio-projects-menu .jcarousel-prev-disabled-horizontal:hover,
-.portfolio-projects-menu .jcarousel-prev-disabled-horizontal:focus,
-.portfolio-projects-menu .jcarousel-prev-disabled-horizontal:active {
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-portfolio-projects-menu .jcarousel-prev-disabled-horizontal:active {
 	background-position: -36px 0;
 	cursor: default;
 }
 
 .project {
+	margin-top: 12px;
 	overflow: hidden;
 }
 
@@ -761,7 +762,12 @@ article.page.no-sidebar-menu .entry-content {
 	font-family: Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
+	margin-bottom: 18px;
 	text-transform: uppercase;
+}
+
+.project-location, .project-contractor, .project-engineer, .project-architect, .project-description {
+	margin-bottom: 18px;
 }
 
 .project-info-title {

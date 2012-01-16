@@ -9,20 +9,14 @@ jQuery(function($){
 
 	$(".portfolio-projects").tabs();
 
-	$.easing["easeInBack"] = function(x, t, b, c, d, s) {
-		if (s === undefined) {
-			s = 1.70158;
-		}
-
-		return c * (t /= d) * t * ((s + 1) * t - s) + b;
-	};
-
-	$(".portfolio-projects-menu").jcarousel({
+	$(".jcarousel").jcarousel({
 		animation: 500,
 		easing: "easeInBack",
 		scroll: 5,
 		wrap: "circular"
 	});
 
-	$(".project-pictures").tabs();
+	$(".project-pictures").tabs({ fx: { opacity: "toggle", duration: "slow" } });
+
+	$(".current-picture a").fancybox();
 });
