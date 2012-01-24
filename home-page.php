@@ -26,18 +26,20 @@ get_header(); ?>
 		</ul>
 		<div id="slide-1">
 			<div class="image">
-				<span class="slide-title safe">
+				<div style="position: absolute; top: 0; left: 0;">
+				<div class="slide-title safe">
 					Safe
-				</span>
-				<span class="slide-title responsive">
+				</div>
+				<div class="slide-title responsive">
 					Responsive
-				</span>
-				<span class="slide-title committed">
+				</div>
+				<div class="slide-title committed">
 					Committed
-				</span>
-				<span class="always-on">
+				</div>
+				<div class="always-on">
 					always on
-				</span>
+				</div>
+				</div>
 			</div>
 			<!--<div class="slide-title safe">Safe</div><div class="slide-title responsive">Responsive</div><div class="slide-title committed">Committed</div>
 			<div class="always-on">always on</div>
@@ -56,7 +58,7 @@ get_header(); ?>
 			<!--<div class="slide-title safe">Safe</div>
 			<div class="always-on">always on</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/slideshow-slide-2.png" alt="" />-->
-			<p>At CEC, Safety is always on. With over a dozen safety-training<br />programs,and a proactive, assertive approach to preventing<br />job-related accidents, our safety rating is one of the best in the industry.</p>
+			<p>At CEC, Safety is always on. With over a dozen safety-training<br />programs, and a proactive, assertive approach to preventing<br />job-related accidents, our safety record is one of the best in the industry.</p>
 		</div>
 		<div id="slide-3">
 			<div class="image">
@@ -84,7 +86,7 @@ get_header(); ?>
 			<!--<div class="slide-title committed">Committed</div>
 			<div class="always-on">always on</div>
 			<img src="http://placehold.it/980x386/0B4">-->
-			<p>CEC is committed to a level of quality that is unparalleled in the<br />industry, ensuring customer satisfaction every step of the way. As one of<br />the fastest growing subcontractors in Texas, we've built lasting<br />relationships leading to long-term loyalty and referrals.</p>
+			<p>CEC is committed to a level of quality that is unparalleled in the<br />industry, ensuring customer satisfaction every step of the way. As one of<br />the fastest growing electrical subcontractors in Texas,<br />we are building long-term relationships through integrity,<br />loyalty, and dedication to excellence. We are committed to you.</p>
 		</div>
 	</div>
 	<div id="home-footer">

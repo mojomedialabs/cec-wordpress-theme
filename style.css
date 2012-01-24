@@ -5,7 +5,7 @@ Author: Mojo Media Labs
 Author URI: http://mojomedialabs.com/
 Description: The Custom Theme for CEC ELectric Made by Mojo Media Labs.
 Version: 0.9
-License: Modified MIT
+License: GNU General Public License
 License URI: license.txt
 Tags: green, white, fixed-width, one-column
 */
@@ -458,7 +458,7 @@ ul, ol {
 }
 
 .always-on {
-	bottom: -37px;
+	/*bottom: -37px;*/
 	color: #ffffff;
 	font-family: "Avenir LT 85 Heavy", Arial, sans-serif;
 	font-size: 137px;
@@ -466,6 +466,8 @@ ul, ol {
 	left: 330px;
 	position: absolute;
 	/*top: 302px;*/
+	top: 255px;
+	width: 700px;
 }
 
 #home-page-slideshow p {
@@ -557,7 +559,7 @@ article.page header.entry-header {
 article.page h1.entry-title {
 	color: #7ac143;
 	font-family: "StymieLight", Georgia, sans-serif;
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: normal;
 	margin-bottom: 11px;
 }
@@ -568,6 +570,16 @@ article.page h2.subtitle {
 	font-size: 21px;
 	font-weight: normal;
 	margin-bottom: 19px;
+}
+
+article.page h3 {
+	font-size: 24px;
+	margin-bottom: 0;
+}
+
+article.page h4 {
+	font-size: 18px;
+	margin-bottom: 0;
 }
 
 article.page .entry-sidebar {
@@ -612,6 +624,10 @@ article.page .entry-content {
 	width: 725px;
 }
 
+article.page .entry-content ul {
+	margin-left: 25px;
+}
+
 article.page.no-sidebar-menu .entry-content {
 	float: none;
 	margin-left: 0;
@@ -619,6 +635,16 @@ article.page.no-sidebar-menu .entry-content {
 }
 
 /* End Page */
+
+/* Begin President's Page */
+
+.letter {
+	background: #ffffff;
+	border: 1px solid #bbbbbb;
+	padding: 10px;
+}
+
+/* End President's Page */
 
 /* Begin Portfolio Page */
 
