@@ -3,8 +3,21 @@ jQuery(function($){
 
 	//THIS IS A CHEAP HACK. I HATE THIS BUT I'VE WASTED TOO MUCH TIME TRYING TO FIGURE OUT HOW TO DO IT RIGHT.
 	if ($.browser.mozilla) {
-		$(".slide-title").css("top", "154px");
-		$(".always-on").css("top", "302px");
+		if (navigator.platform.indexOf("Mac") !== -1) {
+			//$(".slide-title").css("top", "154px");
+			$(".slide-title").css("top", "145px");
+			$(".always-on").css("top", "302px");
+		}
+
+		if (navigator.platform.indexOf("Linux") !== -1) {
+			$(".slide-title").css("top", "125px");
+			$(".always-on").css("top", "265px");
+		}
+	}
+
+	//this needs to be moved to a conditional stylesheet or something.
+	if (!$.browser.msie) {
+		$("html").css("height", "100%");
 	}
 
 	$("#home-footer .slide-out").hover(function(event) {

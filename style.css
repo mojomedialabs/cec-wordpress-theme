@@ -130,7 +130,7 @@ input[type="file"] > intput[type="button"]:focus {
 
 html {
 	background: #dddedf;
-	height: 100%;
+	/*height: 100%;*/
 	overflow-y: scroll;
 }
 
@@ -151,6 +151,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
+}
+
+a, a:visited {
+	color: #007dc3;
+}
+
+a:hover, a:focus {
+	color: #2eb2ff;
+}
+
+a:active {
+	color: #003d61;
 }
 
 ul, ol {
@@ -178,6 +190,17 @@ ul, ol {
 	overflow: hidden;
 	padding: 10px;
 	width: 980px;
+}
+
+.home #main {
+	background: #bdbfc1;
+	background: -moz-linear-gradient(top, #bdbfc1 0%, #fafafa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbfc1), color-stop(100%,#fafafa));
+	background: -webkit-linear-gradient(top, #bdbfc1 0%,#fafafa 100%);
+	background: -o-linear-gradient(top, #bdbfc1 0%,#fafafa 100%);
+	background: -ms-linear-gradient(top, #bdbfc1 0%,#fafafa 100%);
+	background: linear-gradient(top, #bdbfc1 0%,#fafafa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdbfc1', endColorstr='#fafafa',GradientType=0 );
 }
 
 .entry-content {
@@ -237,7 +260,6 @@ ul, ol {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	/*color: #c4c6c8;*/
 	color: #79797b;
 }
 
@@ -280,7 +302,6 @@ ul, ol {
 }
 
 #access ul ul a {
-	/*color: #c4c6c8;*/
 	color: #79797b;
 	font-size: 13px;
 	font-weight: normal;
@@ -337,6 +358,7 @@ ul, ol {
 #colophon {
 	background: #000000;
 	bottom: 0;
+	color: #ffffff;
 	height: 50px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -345,13 +367,18 @@ ul, ol {
 }
 
 #colophon a {
-	color: #231F20;
+	/*color: #231F20;*/
+	color: #ffffff;
 	text-decoration: none;
+}
+
+#colophon a:hover {
+	text-decoration: underline;
 }
 
 #copyright {
 	float: left;
-	margin: 5px 0 5px 5px;
+	margin: 5px 0 0px 5px;
 }
 
 #mojo {
@@ -383,7 +410,8 @@ ul, ol {
 
 #home-page-slideshow {
 	color: #00549e;
-	font-family: Georgia, serif;
+	/*font-family: Georgia, serif;*/
+	font-family: "Avenir LT 85 Heavy", Arial, sans-serif;
 	font-size: 20px;
 	font-style: italic;
 }
@@ -428,11 +456,11 @@ ul, ol {
 }
 
 #home-page-slideshow #slide-3 .image {
-	background: url(http://placehold.it/980x386/0FF) no-repeat center center transparent;
+	background: url(images/slideshow-slide-3.png) no-repeat center center transparent;
 }
 
 #home-page-slideshow #slide-4 .image {
-	background: url(http://placehold.it/980x386/0B4) no-repeat center center transparent;
+	background: url(images/slideshow-slide-4.png) no-repeat center center transparent;
 }
 
 .slide-title {
@@ -441,8 +469,8 @@ ul, ol {
 	font-size: 55px;
 	font-style: italic;
 	position: absolute;
-	/*top: 157px;*/
-	top: 136px;
+	/*top: 136px;*/
+	top: 127px;
 }
 
 .safe {
@@ -458,14 +486,12 @@ ul, ol {
 }
 
 .always-on {
-	/*bottom: -37px;*/
 	color: #ffffff;
 	font-family: "Avenir LT 85 Heavy", Arial, sans-serif;
 	font-size: 137px;
 	font-style: normal;
 	left: 330px;
 	position: absolute;
-	/*top: 302px;*/
 	top: 255px;
 	width: 700px;
 }
@@ -523,17 +549,21 @@ ul, ol {
 	padding: 0 23px;
 }
 
-#home-footer #solution {
-	background-color: #c5c6c8;
-	left: 118px;
+#home-footer .slide-out .slide-out-content a {
+	color: #ffffff;
 }
 
 #home-footer #energy {
 	background-color: #7ac142;
+	left: 118px;
+}
+
+#home-footer #commissioning {
+	background-color: #c5c6c8;
 	left: 387px;
 }
 
-#home-footer #lighting {
+#home-footer #join-our-team {
 	background-color: #007dc3;
 	left: 656px;
 }
@@ -558,10 +588,12 @@ article.page header.entry-header {
 
 article.page h1.entry-title {
 	color: #7ac143;
-	font-family: "StymieLight", Georgia, sans-serif;
+	/*font-family: "StymieLight", Georgia, sans-serif;*/
+	font-family: "Avenir LT 85 Heavy", Arial, sans-serif;
 	font-size: 35px;
 	font-weight: normal;
 	margin-bottom: 11px;
+	padding-top: 4px;
 }
 
 article.page h2.subtitle {
@@ -609,7 +641,6 @@ article.page .entry-sidebar ul li.current_page_item {
 }
 
 article.page .entry-sidebar ul li a {
-	/*color: #c4c6c8;*/
 	color: #79797b;
 	text-decoration: none;
 }
@@ -646,7 +677,84 @@ article.page.no-sidebar-menu .entry-content {
 
 /* End President's Page */
 
-/* Begin Portfolio Page */
+/* Begin Industry Awards Page */
+
+.award {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.award img {
+	width: 500px;
+}
+
+/* End Industry Awards Page */
+
+/* Begin Safety / Certificates Page */
+
+.safety-certificate {
+	float: left;
+	height: 226px;
+	line-height: 226px;
+	margin-bottom: 0 15px 15px 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 226px;
+}
+
+.safety-certificate img {
+	width: 226px;
+}
+
+.safety-certificate a {
+	font-size: 30px;
+	height: 226px;
+	text-decoration: none;
+	width: 226px;
+}
+
+/* End Safety / Certificates Page */
+
+/* Begin References Page */
+
+.reference {
+	float: left;
+	height: 226px;
+	line-height: 226px;
+	margin: 0 15px 15px 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 226px;
+}
+
+.reference img {
+	width: 226px;
+}
+
+.reference a {
+	font-size: 30px;
+	height: 226px;
+	text-decoration: none;
+	width: 226px;
+}
+
+/* End References Page */
+
+/* Begin Industry Awards */
+
+.industry-award {
+	float: left;
+	height: 226px;
+	line-height: 226px;
+	margin: 0 15px 15px 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 226px;
+}
+
+/* End Industry Awards */
+
+/* Begin Portfolio Pages */
 
 .portfolio-page {
 	background: #f2f2f2;
@@ -660,7 +768,9 @@ article.page.no-sidebar-menu .entry-content {
 }
 
 .jcarousel-skin-portfolio-projects-menu .jcarousel-container-horizontal {
-	width: 705px;
+	margin: 0 auto;
+	/*width: 705px;*/
+	width: 405px;
 }
 
 .jcarousel-skin-portfolio-projects-menu .jcarousel-clip {
@@ -670,7 +780,8 @@ article.page.no-sidebar-menu .entry-content {
 .jcarousel-skin-portfolio-projects-menu .jcarousel-clip-horizontal {
 	height: 70px;
 	margin: 0 auto;
-	width: 620px;
+	/*width: 620px;*/
+	width: 340px;
 }
 
 .jcarousel-skin-portfolio-projects-menu .jcarousel-item {
@@ -709,7 +820,7 @@ article.page.no-sidebar-menu .entry-content {
 .jcarousel-skin-portfolio-projects-menu .jcarousel-next-disabled-horizontal,
 .jcarousel-skin-portfolio-projects-menu .jcarousel-next-disabled-horizontal:hover,
 .jcarousel-skin-portfolio-projects-menu .jcarousel-next-disabled-horizontal:focus,
-.pjcarousel-skin-ortfolio-projects-menu .jcarousel-next-disabled-horizontal:active {
+.jcarousel-skin-ortfolio-projects-menu .jcarousel-next-disabled-horizontal:active {
 	background-position: -36px 0;
 	cursor: default;
 }
@@ -764,6 +875,7 @@ article.page.no-sidebar-menu .entry-content {
 
 .project-pictures-menu {
 	list-style: none;
+	margin: 0 !important;
 	text-align: center;
 }
 
@@ -800,4 +912,61 @@ article.page.no-sidebar-menu .entry-content {
 	color: #007dc3;
 }
 
-/* End Portfolio Page */
+/* End Portfolio Pages */
+
+/* Begin Contact Us Page */
+
+#contact-form {
+	background: #00ff00;
+	float: left;
+	height: 600px;
+	margin-top: 25px;
+	width: 350px;
+}
+
+#map {
+	float: right;
+	height: 357px;
+	margin-top: 50px;
+	width: 500px;
+}
+
+#map img {
+	max-width: none;
+}
+
+#contact-info {
+	float: right;
+	margin-top: 25px;
+	width: 500px;
+}
+
+#contact-info-address {
+	float: left;
+}
+
+#contact-info-phone {
+	clear: right;
+	float: right;
+	width: 226px;
+}
+
+#contact-info-fax {
+	clear: right;
+	float: right;
+	width: 226px;
+}
+
+#contact-info-email-address {
+	clear: right;
+	float: right;
+	width: 226px;
+}
+
+.contact-method {
+	color: #80c34f;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* End Contact Us Page */
