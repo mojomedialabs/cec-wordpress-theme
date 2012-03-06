@@ -48,9 +48,7 @@ if (is_page() and ($notfound != '1') and !is_front_page()) {
 	</header><!-- .entry-header -->
   <?php if ($menu != '') { ?>
   <div class="entry-sidebar">
-        <ul>
-          <?php echo $menu; ?>
-        </ul>
+	<?php echo $menu; ?>
   </div>
 <?php } ?>
 	<div class="entry-content">

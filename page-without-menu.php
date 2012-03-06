@@ -9,9 +9,9 @@
  * @since Twenty Eleven 1.0
  */
 function getRandomHeader(){
-  $options = array("b3ff00", "ff00b3", "ccc", "");
+  $options = array("1", "2", "3", "4");
   shuffle($options);
-  return "<img src='http://placehold.it/990x155/$options[0]' class='page-header-image'>";
+	return "<img src='" . get_template_directory_uri() . "/images/headers/header" . $options[0] . ".png' alt='CEC Electrical Inc.' />";
 }
 get_header(); echo getRandomHeader(); ?>
 	<div id="primary">

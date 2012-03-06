@@ -14,6 +14,32 @@
   </div><!-- #main -->
 <?php /**/ ?>
 	<footer id="colophon" role="contentinfo">
+		<!--<div id="home-footer">
+			<div id="energy" class="slide-out">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/green-energy.png" alt="" />
+				<div class="slide-out-content">
+					<h3>Green Energy</h3>
+					<p class="read-more"><a href="?page_id=30">Read More</a></p>
+				</div>
+			</div>
+
+			<div id="commissioning" class="slide-out">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/commissioning.png" alt="" />
+				<div class="slide-out-content">
+					<h3>Commissioning</h3>
+					<p class="read-more"><a href="?page_id=34">Read More</a></p>
+				</div>
+			</div>
+
+			<div id="join-our-team" class="slide-out">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/join-our-team.png" alt="" />
+				<div class="slide-out-content">
+					<h3>Join Our Team</h3>
+					<p class="read-more"><a href="?page_id=71">Read More</a></p>
+				</div>
+			</div>
+		</div>-->
+
 		<p id="copyright">&copy;<?php echo date("Y"); ?> CEC Electrical Inc.</p>
 		<p id="mojo">Designed by <a href="http://mojomedialabs.com/" target="_blank">Mojo Media Labs</a>.
 			<?php
@@ -36,24 +62,6 @@
         </li>
       </ul>
     </nav>
-<!-- this is only here because we're just seeing what this looks like -->
-<style>
-#bottom-menu {
-	bottom: 5px;
-	font-size: 10px;
-	left: 312px;
-	position: absolute;
-	width: 400px;
-}
-#bottom-menu ul {
-	list-style: none;
-	text-align: center;
-}
-#bottom-menu ul li {
-	float: left;
-	margin-right: 10px;
-}
-</style>
 	<nav id="bottom-menu">
 		<ul>
 			<li>About Us</li>

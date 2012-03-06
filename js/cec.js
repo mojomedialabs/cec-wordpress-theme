@@ -23,7 +23,7 @@ jQuery(function($){
 	$("#home-footer .slide-out").hover(function(event) {
 		$(this).stop().animate({ bottom: "0px" });
 	}, function(event) {
-		$(this).stop().animate({ bottom: "-124px" });
+		$(this).stop().animate({ bottom: "-30px" });
 	});
 
 	$(".portfolio-projects").tabs();
@@ -35,7 +35,17 @@ jQuery(function($){
 		wrap: "circular"
 	});
 
-	$(".project-pictures").tabs({ fx: { opacity: "toggle", duration: "slow" } });
+	$(".project-pictures").tabs({
+		fx: { opacity: "toggle", duration: "slow" },
+		select: function(event, ui) {
+			$(this).css("height", $(this).height());
+			$(this).css("overflow", "hidden");
+		},
+		show: function(event, ui) {
+			$(this).css("height", "auto");
+			$(this).css("overflow", "visible");
+		}
+	 });
 
 	$(".current-picture a").fancybox();
 });

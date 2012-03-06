@@ -77,12 +77,11 @@ get_header(); ?>
 			<p>CEC is committed to a level of quality that is unparalleled in the industry, ensuring customer satisfaction every step of the way. As one of the fastest growing electrical subcontractors in Texas, we are building long-term relationships through integrity, loyalty, and dedication to excellence. We are committed to you.</p>
 		</div>
 	</div>
-	<div id="home-footer">
+	<!--<div id="home-footer">
 		<div id="energy" class="slide-out">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/green-energy.png" alt="" />
 			<div class="slide-out-content">
 				<h3>Green Energy</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem rutrum ligula venenatis.</p>
 				<p class="read-more"><a href="?page_id=30">Read More</a></p>
 			</div>
 		</div>
@@ -91,7 +90,6 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/commissioning.png" alt="" />
 			<div class="slide-out-content">
 				<h3>Commissioning</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem rutrum ligula venenatis.</p>
 				<p class="read-more"><a href="?page_id=34">Read More</a></p>
 			</div>
 		</div>
@@ -100,9 +98,8 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/join-our-team.png" alt="" />
 			<div class="slide-out-content">
 				<h3>Join Our Team</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem rutrum ligula venenatis.</p>
 				<p class="read-more"><a href="?page_id=71">Read More</a></p>
 			</div>
 		</div>
-	</div>
+	</div>-->
 <?php get_footer(); ?>
