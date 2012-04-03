@@ -77,6 +77,20 @@ get_header(); ?>
 			<p>CEC is committed to a level of quality that is unparalleled in the industry, ensuring customer satisfaction every step of the way. As one of the fastest growing electrical subcontractors in Texas, we are building long-term relationships through integrity, loyalty, and dedication to excellence. We are committed to you.</p>
 		</div>
 	</div>
+	<div id="home-calls-to-action">
+		<a href="capabilities/sustainable-building" id="energy" class="home-call-to-action">
+			<h3>Green Energy</h3>
+			<p>(click to learn more)</p>
+		</a>
+		<a href="capabilities/commissioning" id="commissioning" class="home-call-to-action">
+			<h3>Commissioning</h3>
+			<p>(click to learn more)</p>
+		</a>
+		<a href="join-our-team" id="join-our-team" class="home-call-to-action">
+			<h3>Join Our Team</h3>
+			<p>(click to learn more)</p>
+		</a>
+	</div>
 	<!--<div id="home-footer">
 		<div id="energy" class="slide-out">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/green-energy.png" alt="" />

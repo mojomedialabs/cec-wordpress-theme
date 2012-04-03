@@ -130,8 +130,7 @@ input[type="file"] > intput[type="button"]:focus {
 
 html {
 	background: #dddedf;
-	/*height: 100%;*/
-	overflow-y: scroll;
+	height: 100%;
 }
 
 body {
@@ -151,7 +150,7 @@ body {
 	background: -o-linear-gradient(top, #80c34f 0%, #b0d78d 250px, #818588 250px, #d9d9d9 100%) no-repeat;
 	background: -ms-linear-gradient(top, #80c34f 0%, #b0d78d 250px, #818588 250px, #d9d9d9 100%) no-repeat;
 	background: linear-gradient(top, #80c34f 0%, #b0d78d 250px, #818588 250px, # 100%) no-repeat;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818588', endColorstr='#d9d9d9', GradientType=0 ) no-repeat;
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818588', endColorstr='#d9d9d9', GradientType=0 ) no-repeat;*/
 
 	/*background: url(images/background-leather.png) 0 250px repeat, url(images/background-1.png) top repeat-x, -moz-linear-gradient(top, #aaaaaa, #dddedf) 0 250px no-repeat;
 	background-image: url(images/background.png), -webkit-gradient(linear, left top, left bottom, from(#cbe3ba), to(#a6cc8b));*/
@@ -199,9 +198,9 @@ ul, ol {
 	background: linear-gradient(top, #dddedf 0%,#fafafa 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddedf', endColorstr='#fafafa',GradientType=0 );
 	margin: -31px auto 0;
-	min-height: 85%;
-	overflow: hidden;
-	padding: 10px;
+	min-height: 82%;
+	overflow: auto;
+	padding: 10px 10px 50px 10px;
 	width: 980px;
 }
 
@@ -369,12 +368,21 @@ ul, ol {
 /* Begin Main Footer */
 
 #colophon {
-	background: #000000;
+	/*background: #000000;
 	bottom: 0;
 	color: #ffffff;
 	height: 50px;
 	margin: 0 auto;
 	overflow: hidden;
+	position: fixed;
+	width: 1000px;*/
+
+	background: #000000;
+	bottom: 0;
+	color: #ffffff;
+	clear: both;
+	height: 50px;
+	margin-top: -50px;
 	position: fixed;
 	width: 1000px;
 }
@@ -477,19 +485,19 @@ ul, ol {
 }
 
 #home-page-slideshow #slide-1 .image {
-	background: url(images/slideshow-slide-1.png) no-repeat center center transparent;
+	background: url(images/slideshow-slide-1.jpg) no-repeat center center transparent;
 }
 
 #home-page-slideshow #slide-2 .image {
-	background: url(images/slideshow-slide-2.png) no-repeat center center transparent;
+	background: url(images/slideshow-slide-2.jpg) no-repeat center center transparent;
 }
 
 #home-page-slideshow #slide-3 .image {
-	background: url(images/slideshow-slide-3.png) no-repeat center center transparent;
+	background: url(images/slideshow-slide-3.jpg) no-repeat center center transparent;
 }
 
 #home-page-slideshow #slide-4 .image {
-	background: url(images/slideshow-slide-4.png) no-repeat center center transparent;
+	background: url(images/slideshow-slide-4.jpg) no-repeat center center transparent;
 }
 
 .slide-title {
@@ -526,15 +534,75 @@ ul, ol {
 }
 
 #home-page-slideshow p {
+	height: 125px;
 	margin: 45px 0 0 60px;
 	width: 650px;
 }
 
 /* End Home Page Slider */
 
+/* Begin Home Page Calls to Action */
+
+#home-calls-to-action {
+	overflow: hidden;
+	padding: 20px 0 20px 0;
+}
+
+.home-call-to-action {
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	color: #ffffff;
+	display: inline-block;
+	float: left;
+	height: 80px;
+	margin-left: 70px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	padding-top: 70px;
+	text-decoration: none;
+	width: 232px;
+}
+
+.home-call-to-action:hover, .home-call-to-action:focus, .home-call-to-action:active, .home-call-to-action:visited {
+	color: #ffffff;
+}
+
+.home-call-to-action h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.home-call-to-action p {
+	font-size: 12px;
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+
+#energy {
+	background: #7ac142 url(images/headers/green-energy.png) top center no-repeat;
+}
+
+#commissioning {
+	background: #959698 url(images/headers/commissioning.png) top center no-repeat;
+}
+
+#join-our-team {
+	background: #007dc3 url(images/headers/join-our-team.png) top center no-repeat;
+}
+
+/* End Home Page Calls to Action */
+
 /* Begin Home Page Footer */
 
-#home-footer {
+/*#home-footer {
 	bottom: 50px;
 	height: 40px;
 	margin: 0px auto;
@@ -600,7 +668,7 @@ ul, ol {
 #home-footer .slide-out .slide-out-content p.read-more {
 	margin-top: 10px;
 	text-align: right;
-}
+}*/
 
 /* End Home Page Footer */
 

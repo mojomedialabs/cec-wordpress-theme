@@ -64,13 +64,13 @@
     </nav>
 	<nav id="bottom-menu">
 		<ul>
-			<li>About Us</li>
-			<li>Capabilities</li>
-			<li>Portfolio</li>
-			<li>Careers</li>
-			<li>Contact Us</li>
-			<li>Service</li>
-			<li>Plan Room</li>
+			<li><a href="/about-us">About Us</a></li>
+			<li><a href="/capabilities">Capabilities</a></li>
+			<li><a href="/portfolio">Portfolio</a></li>
+			<li><a href="/careers">Careers</a></li>
+			<li><a href="/contact-us">Contact Us</a></li>
+			<li><a href="/service">Service</a></li>
+			<li><a href="/plan-room">Plan Room</a></li>
 		</ul>
 	</nav>
 	</footer><!-- #colophon -->
